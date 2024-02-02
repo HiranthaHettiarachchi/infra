@@ -47,7 +47,7 @@
       },
       "permissions": [
         {
-          "role": "anonymous",
+          "role": "authenticated",
           "actions": [
             {
               "action": "*"
