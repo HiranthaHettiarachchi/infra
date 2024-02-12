@@ -2,7 +2,7 @@
 	"auth": {
 		"identityProviders": {
 			"customOpenIdConnectProviders": {
-				"auth0": {
+				"ims": {
 					"registration": {
 						"clientIdSettingName": "IMS_PROVIDER_CLIENT_ID",
 						"clientCredential": {
