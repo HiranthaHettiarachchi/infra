@@ -1,1 +1,26 @@
-
+{
+	"auth": {
+		"identityProviders": {
+			"customOpenIdConnectProviders": {
+				"ims": {
+					"registration": {
+						"clientIdSettingName": "IMS_PROVIDER_CLIENT_ID",
+						"clientCredential": {
+							"clientSecretSettingName": "IMS_PROVIDER_CLIENT_SECRET"
+						},
+						"openIdConnectConfiguration": {
+							"wellKnownOpenIdConfiguration": "https://ims.bentley.com/.well-known/openid-configuration"
+						}
+					},
+					"login": {
+						"nameClaimType": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name",
+						"scopes": [
+							"openid",
+							"profile"
+						]
+					}
+				}
+			}
+		}
+	}
+}
