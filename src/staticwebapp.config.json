@@ -2,7 +2,7 @@
 	"trailingSlash": "auto",
 	"routes": [
 		{
-			"route": "/api/*",
+			"route": "/data-api/*",
 			"methods": [
 				"GET"
 			],
@@ -11,7 +11,7 @@
 			]
 		},
 		{
-			"route": "/api/*",
+			"route": "/data-api/*",
 			"methods": [
 				"PUT",
 				"POST",
@@ -23,7 +23,7 @@
 			]
 		},
 		{
-			"route": "/api/*",
+			"route": "/data-api/*",
 			"allowedRoles": [
 				"authenticated"
 			]
@@ -31,7 +31,7 @@
 		{
 			"route": "/index.html*",
 			"allowedRoles": [
-				"authenticated"
+				"anonymous"
 			]
 		}
 	],
@@ -60,6 +60,11 @@
 						"openIdConnectConfiguration": {
 							"wellKnownOpenIdConfiguration": "https://ims.bentley.com/.well-known/openid-configuration"
 						}
+					},
+					"login": {
+						"nameClaimType": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name",
+						"scopes": [],
+						"loginParameterNames": []
 					}
 				}
 			}
