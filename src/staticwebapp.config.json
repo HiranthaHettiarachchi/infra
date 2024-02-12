@@ -2,14 +2,14 @@
 	"auth": {
 		"identityProviders": {
 			"customOpenIdConnectProviders": {
-				"auth0": {
+				"ims": {
 					"registration": {
-						"clientIdSettingName": "AUTH_CLIENT_ID",
+						"clientIdSettingName": "IMS_PROVIDER_CLIENT_ID",
 						"clientCredential": {
-							"clientSecretSettingName": "AUTH_SECRET"
+							"clientSecretSettingName": "IMS_PROVIDER_CLIENT_SECRET"
 						},
 						"openIdConnectConfiguration": {
-							"wellKnownOpenIdConfiguration": "https://dev-hpdfr0saydx4g4rf.us.auth0.com/.well-known/openid-configuration"
+							"wellKnownOpenIdConfiguration": "https://ims.bentley.com/.well-known/openid-configuration"
 						}
 					},
 					"login": {
