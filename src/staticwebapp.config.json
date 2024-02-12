@@ -53,9 +53,9 @@
 			"customOpenIdConnectProviders": {
 				"ims": {
 					"registration": {
-						"clientIdSettingName": "webapp-FSylX3SRMREEJDtzwXPEkK8fx",
+						"clientIdSettingName": "IMS_PROVIDER_CLIENT_ID",
 						"clientCredential": {
-							"clientSecretSettingName": "3RRape0SdzY+dAs/FnZJ/29SlXojDFuHmPzszV9nE1/oZ8mZPbFl9JfGFuZfQCp3msjwB+gkQFNVWZTPpiXxng=="
+							"clientSecretSettingName": "IMS_PROVIDER_CLIENT_SECRET"
 						},
 						"openIdConnectConfiguration": {
 							"wellKnownOpenIdConfiguration": "https://ims.bentley.com/.well-known/openid-configuration"
