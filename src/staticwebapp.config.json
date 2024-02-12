@@ -1,53 +1,4 @@
 {
-	"trailingSlash": "auto",
-	"routes": [
-		{
-			"route": "/data-api/*",
-			"methods": [
-				"GET"
-			],
-			"allowedRoles": [
-				"anonymous"
-			]
-		},
-		{
-			"route": "/data-api/*",
-			"methods": [
-				"PUT",
-				"POST",
-				"PATCH",
-				"DELETE"
-			],
-			"allowedRoles": [
-				"administrators"
-			]
-		},
-		{
-			"route": "/data-api/*",
-			"allowedRoles": [
-				"anonymous"
-			]
-		},
-		{
-			"route": "/index.html*",
-			"allowedRoles": [
-				"anonymous"
-			]
-		}
-	],
-	"navigationFallback": {
-		"rewrite": "index.html",
-		"exclude": [
-			"/images/*.{png,jpg,gif}",
-			"/css/*"
-		]
-	},
-	"globalHeaders": {
-		"content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'"
-	},
-	"mimeTypes": {
-		".json": "text/json"
-	},
 	"auth": {
 		"identityProviders": {
 			"customOpenIdConnectProviders": {
@@ -63,7 +14,10 @@
 					},
 					"login": {
 						"nameClaimType": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name",
-						"scopes": ["openid", "profile"],
+						"scopes": [
+							"openid",
+							"profile"
+						],
 						"loginParameterNames": []
 					}
 				}
